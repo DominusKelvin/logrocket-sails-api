@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            padding: 10px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .cta {
+            text-decoration: none;
+            background-color: rgb(76, 119, 175);
+            color: #fff !important;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 auto;
+        }
+
+        footer {
+            margin-top: 2rem;
+        }
+
+        p {
+            margin: 30px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero">
+        <h1 class="title">Welcome, {{ name }}</h1>
+    </section>
+    <main>
+        <p>Please confirm your account by clicking the button below:</p>
+        <a class="cta" href="{{confirmLink}}" target="_blank">Confirm email</a>
+
+        <p>Once confirmed, you'll be able to log in.</p>
+    </main>
+    <footer>
+        <p>🖤 Love,</p>
+    </footer>
+</body>
+
+</html>
